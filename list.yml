@@ -1,0 +1,73 @@
+cards:
+  - name: 人
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 車
+    description: 現代の日本では車は勝手に走ることはない。走っている車を見ればそこに人がいるであろうと考える。
+  - name: 扉の開閉音
+    description: 自動ドア、引き戸、開き戸など、色々な扉がありそれぞれ開閉したときの音の特徴に違いはあるが、過去の経験から扉と認識できる。扉の開閉音が鳴ったとき、その瞬間人が通っていると認識する。
+  - name: コピー機の音
+    description: コピー機の音は特徴的だ。リズミカル
+  - name: 水道の音
+    description: 水は色々な音を発する。落ちてきた水を水受けが受けたときに発する音、水に人が触れてその音が乱れる場面では、人がその水道を使っていることを想起させる。
+  - name: トイレの水が流れる音
+    description: 人の輪郭、人の
+  - name: 車のエンジン音
+    description: 人の輪郭、人の
+  - name: 自転車のブレーキ音
+    description: 人の輪郭、人の
+  - name: 入口に脱ぎ置かれた靴
+    description: 人の輪郭、人の
+  - name: 傘立てに置かれた傘
+    description: 人の輪郭、人の
+  - name: 付けっぱなしのエアコン
+    description: 人の輪郭、人の
+  - name: 付けっぱなしのプロジェクタ
+    description: 人の輪郭、人の
+  - name: 付けっぱなしのモニタ
+    description: 人の輪郭、人の
+  - name: 地面に落ちたタバコの吸殻
+    description: 人の輪郭、人の
+  - name: 空き缶
+    description: 人の輪郭、人の
+  - name: 道に落ちているぬいぐるみ
+    description: 人の輪郭、人の
+  - name: あたかい椅子
+    description: 人の輪郭、人の
+  - name: 涼しい部屋 / 暖かい部屋
+    description: 人の輪郭、人の
+  - name: 人の体臭
+    description: 人の輪郭、人の
+  - name: 香水の香り
+    description: 人の輪郭、人の
+  - name: カップ麺の匂い
+    description: 人の輪郭、人の
+  - name: 乱れたテーブル
+    description: 人の輪郭、人の
+  - name: 整理されたテーブル
+    description: 人の輪郭、人の
+  - name: インクの足跡
+    description: 人の輪郭、人の
+  - name: 椅子の形状
+    description: 人の輪郭、人の
+  - name: トイレの取っ手
+    description: 人の輪郭、人の
+
+categories: 
+  - name: 「ひと気」
+    description: 「ひと気」という言葉がある。人の気配という意味であるが、
+  - name: 直接感じ取れる「ひと気」
+    description: 人影や人の声など、あきらかに直接人が発っしているである「ひと気」。感じ取ればすぐにそこへ意識が向いてしまう強い「ひと気」
+  - name: 人影
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 音
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 間接的に感じ取れる「ひと気」
+    description: 人が直接発したわけではなく、人が残した痕跡、
+  - name: 人の痕跡
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 音
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 残したもの
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
+  - name: 付けっぱなし
+    description: 人の輪郭、服、表情からは強く人の気配を感じる。
