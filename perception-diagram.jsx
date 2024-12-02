@@ -2,6 +2,7 @@ const patterns = [
   {
     name: "視デ研究室前（昼）",
     description: "人の輪郭、服、表情からは強く人の気配を感じる。",
+    startTime: "2024年11月18日 16時43分",
     videoLength: 164,
     places: [[0, "10号館4階"]],
     levels: [
@@ -45,6 +46,27 @@ const patterns = [
       [68, 2],
       [113, 1],
     ],
+    visualHumans2: [
+      [
+        [0, 20, 5],
+        [5, 20, 3],
+        [164, 20, -3],
+      ],
+      [
+        [5, 20, -10],
+        [8, 20, 10],
+      ],
+      [
+        [31, 25, 5],
+        [42, 5, 5],
+      ],
+      [
+        [42, 20, 10],
+        [46, 20, 5],
+        [46, 20, 5],
+        [52, 20, -10],
+      ],
+    ],
     consciousHumans: [
       [0, 0],
       [5, 1],
@@ -60,6 +82,27 @@ const patterns = [
       [64, 3],
       [73, 2],
       [120, 1],
+    ],
+    consciousHumans2: [
+      [
+        [0, 20, 5, 1],
+        [5, 20, 3, 2],
+        [164, 20, -3, 2],
+      ],
+      [
+        [5, 20, -10, 1],
+        [8, 20, 10, 1],
+      ],
+      [
+        [31, 25, 5, 1],
+        [42, 5, 5, 1],
+      ],
+      [
+        [42, 20, 10, 1],
+        [46, 20, 5, 1],
+        [46, 20, 5, 1],
+        [52, 20, -10, 1],
+      ],
     ],
     sounds: [
       [31, 1, "遠くから人の声が聞こえる。視デ研究室の中にもう一人の影を見る"],
@@ -98,6 +141,7 @@ const patterns = [
   {
     name: "視デ研究室前（夜）",
     description: "人の輪郭、服、表情からは強く人の気配を感じる。",
+    startTime: "2024年11月18日 17時40分",
     videoLength: 181,
     places: [[0, "10号館4階"]],
     levels: [
@@ -105,13 +149,14 @@ const patterns = [
       [5, 1],
       [7, 2, "車の音が遠くから聞こえる"],
       [13, 2, "どこかの扉を閉じた音が聞こえる"],
-      [14, "視デ研究室の扉が開き、中から人が出てくる"],
-      [16, "視デ研究室の人、右に歩いていく。"],
-      [21, "視デ研究室の扉が勝手にしまり、カチャリと鳴る"],
-      [60, "破裂音的な音が小さく鳴る"],
-      [131, "通路の右から人が現れる"],
-      [145, "人が視デ研究室の扉を開け、中に入る"],
-      [152, "自動的に扉が閉まり、カチャリと鳴る"],
+      [14, 3, "視デ研究室の扉が開き、中から人が出てくる"],
+      [16, 2, "視デ研究室の人、右に歩いていく。"],
+      [21, 1, "視デ研究室の扉が勝手にしまり、カチャリと鳴る"],
+      [60, 1, "破裂音的な音が小さく鳴る"],
+      [131, 2, "通路の右から人が現れる"],
+      [145, 2, "人が視デ研究室の扉を開け、中に入る"],
+      [152, 1, "自動的に扉が閉まり、カチャリと鳴る"],
+      [181, 1, "自動的に扉が閉まり、カチャリと鳴る"],
     ],
     visualHumans: [
       [0, 0],
@@ -120,6 +165,16 @@ const patterns = [
       [131, 1],
       [145, 0],
     ],
+    visualHumans2: [
+      [
+        [14, 20, -5],
+        [21, 20, 30],
+      ],
+      [
+        [131, 20, 30],
+        [145, 20, -5],
+      ],
+    ],
     consciousHumans: [
       [0, 0],
       [14, 1],
@@ -127,8 +182,40 @@ const patterns = [
       [131, 1],
       [180, 0],
     ],
-    sounds: [],
-    noise: [],
+    consciousHumans2: [
+      [
+        [14, 20, -5],
+        [21, 20, 30],
+      ],
+      [
+        [131, 20, 30],
+        [145, 20, -5],
+      ],
+    ],
+    sounds: [
+      [7, 1, "車の音が遠くから聞こえる"],
+      [13, 2, "どこかの扉を閉じた音が聞こえる"],
+      [14, 2, "視デ研究室の扉が開き、中から人が出てくる"],
+      [16, 1, "視デ研究室の人、右に歩いていく。"],
+      [21, 3, "視デ研究室の扉が勝手にしまり、カチャリと鳴る"],
+      [60, 1, "破裂音的な音が小さく鳴る"],
+      [141, 1, "通路の右から人が現れる"],
+      [145, 2, "人が視デ研究室の扉を開け、中に入る"],
+      [152, 3, "自動的に扉が閉まり、カチャリと鳴る"],
+    ],
+    noise: [
+      [0, 1],
+      [7, 2, "車の音が遠くから聞こえる"],
+      [12, 1, "どこかの扉を閉じた音が聞こえる"],
+      [14, 1, "視デ研究室の扉が開き、中から人が出てくる"],
+      [16, 1, "視デ研究室の人、右に歩いていく。"],
+      [21, 1, "視デ研究室の扉が勝手にしまり、カチャリと鳴る"],
+      [60, 2, "破裂音的な音が小さく鳴る"],
+      [131, 1, "通路の右から人が現れる"],
+      [145, 1, "人が視デ研究室の扉を開け、中に入る"],
+      [152, 1, "自動的に扉が閉まり、カチャリと鳴る"],
+      [181, 1],
+    ],
     events: [
       [7, "車の音が遠くから聞こえる"],
       [13, "どこかの扉を閉じた音が聞こえる"],
@@ -136,7 +223,7 @@ const patterns = [
       [16, "視デ研究室の人、右に歩いていく。"],
       [21, "視デ研究室の扉が勝手にしまり、カチャリと鳴る"],
       [60, "破裂音的な音が小さく鳴る"],
-      [131, "通路の右から人が現れる"],
+      [141, "通路の右から人が現れる"],
       [145, "人が視デ研究室の扉を開け、中に入る"],
       [152, "自動的に扉が閉まり、カチャリと鳴る"],
     ],
@@ -144,25 +231,154 @@ const patterns = [
   {
     name: "10号館、9号館、中央広場（昼）",
     description: "人の輪郭、服、表情からは強く人の気配を感じる。",
+    startTime: "2024年11月18日 16時36分",
     videoLength: 13 * 60 + 49,
     places: [
-      [0, "10号館4階"],
-      [30, "9号館4階"],
-      [60, "9号館3階"],
+      [0, "10号413号室"],
+      [15, "10号館4階"],
+      [97, "9号館4階"],
+      [223, "9号館3階"],
+      [350, "9号館2階"],
+      [372, "9号館1階"],
+      [480, "9号館外"],
+      [530, "7号館、8号館の間"],
+      [570, "中央広場"],
+      [640, "9号館横"],
+      [690, "10号館1階"],
+      [710, "10号館2階"],
+      [745, "10号館3階"],
+      [790, "10号館4階"],
+      [813, "10号413号室"],
     ],
     levels: [
-      [0, 1],
-      [0, 3],
+      [0, 0],
+      [25, 3],
+      [32, 4],
+      [34, 5],
+      [84, 4],
+      [100, 2],
+      [101, 1],
+      [102, 2],
+      [103, 3],
+      [110, 2],
+      [130, 3],
+      [160, 4],
+      [180, 3],
     ],
-    visualHumans: [],
-    consciousHumans: [],
-    sounds: [],
-    noise: [],
-    events: [],
+    visualHumans: [
+      [0, 0],
+      [25, 1],
+      [87, 0],
+      [104, 1],
+      [105, 2],
+      [106, 0],
+      [112, 1],
+    ],
+    visualHumans2: [
+      [
+        [25, 5, -40],
+        [26, 5, 5],
+        [32, 1, 10],
+        [35, 2, 0],
+        [80, 2, 10],
+        [86, 4, 160],
+        [95, 15, 180],
+        [100, 15, 180],
+      ],
+      [
+        [104, 8, 10],
+        [105, 8, -10],
+      ],
+      [
+        [105, 8, 9],
+        [106, 8, -11],
+      ],
+      [
+        [105, 8, 10],
+        [106, 8, -10],
+      ],
+      [
+        [112, 30, 0],
+        [116, 1, 10],
+        [119, 1, 90],
+      ]
+    ],
+    consciousHumans: [
+      [0, 0],
+      [18, 1],
+      [94, 0],
+      [94, 0],
+      [97, 3],
+      [100, 0],
+      [112, 1],
+      [130, 0],
+    ],
+    consciousHumans2: [],
+    sounds: [
+      [11, 1, "扉を開くキィという音が聞こえる"],
+      [15, 3, "自分で開けた扉の音が聞こえる"],
+      [18, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [19, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [20, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [21, 3, "自分で開けた扉が閉まる音が聞こえる"],
+      [21, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [22, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [23, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [24, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [25, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [26, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [27, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [28, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [29, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [30, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [31, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [32, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [33, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [34, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [35, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [36, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [37, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [38, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [39, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [40, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [41, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [42, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [43, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [44, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [45, 2, "水道のぴちゃぴちゃとう音が聞こえる"],
+    ],
+    noise: [
+      [0, 1],
+      [10, 1],
+      [13, 2],
+      [15, 3],
+      [30, 4],
+      [40, 3],
+      [50, 2],
+      [200, 2],
+    ],
+    events: [
+      [0, "知覚地図の教室で録画をスタートし、出発する。"],
+      [11, "扉を開くキィという音が聞こえる"],
+      [13, "扉に近づくにつれ、部屋の外の環境音が聞こえるようになる"],
+      [15, "教室の扉を開ける"],
+      [18, "水道のぴちゃぴちゃとう音が聞こえる"],
+      [21, "自分で開けた扉が閉まる音が聞こえる"],
+      [25, "流しの前で何かを洗っている人を認識する"],
+      [30, "流しの前の人がまやちゃんであるとわかる"],
+      [33, "まやちゃんに声を掛ける"],
+      [34, "返答が返ってくる"],
+      [40, "しばらく会話"],
+      [86, "会話終了"],
+      [88, "渡り廊下の上で横風を感じる"],
+      [97, "9号館の扉を開ける"],
+      [97, "9号館の扉を開ける"],
+    ],
   },
   {
     name: "10号館、9号館、中央広場（夜）",
     description: "人の輪郭、服、表情からは強く人の気配を感じる。",
+    startTime: "2024年11月18日 17時32分",
     videoLength: 11 * 60 + 37,
     places: [[0, "10号館4階"]],
     levels: [
@@ -170,7 +386,9 @@ const patterns = [
       [5, 2],
     ],
     visualHumans: [[0, 0]],
+    visualHumans2: [],
     consciousHumans: [],
+    consciousHumans2: [],
     sounds: [],
     noise: [
       [0, 1],
@@ -181,7 +399,7 @@ const patterns = [
       [150, 1],
       [180, 2],
     ],
-    events: [],
+    events: [[0, "知覚地図の教室で録画をスタートし、出発する。"]],
   },
 ];
 var fontSize = {
@@ -192,8 +410,8 @@ var fontSize = {
 };
 var fontColor = {
   dark: "#000000",
-  light: "#333333",
-  veryLight: "#999999",
+  light: "#444444",
+  veryLight: "#666666",
 };
 var fontName = {
   common: "UDReiminPr6N-Light", // PostScript名
@@ -342,9 +560,7 @@ function generateText(text, fontSize, colorCode) {
   var textObject = generatedGroup.textFrames.add();
   textObject.contents = text;
 
-  textObject.filled = true;
-  textObject.fillColor = hexToRGBColor(colorCode);
-  textObject.stroked = false;
+  textObject.textRange.fillColor = hexToRGBColor(colorCode);
   textObject.textRange.characterAttributes.size = fontSize / 10;
 
   try {
@@ -357,77 +573,150 @@ function generateText(text, fontSize, colorCode) {
   return textObject;
 }
 
+function generateCircle(x, y, diameter, color, weight, strokeColor) {
+  var actualDiameter = mmToPt(diameter)
+  var actualTop = mmToBoardY(y)+ actualDiameter / 2;
+  var actualLeft = mmToBoardX(x) - actualDiameter / 2;
+  var circle = generatedGroup.pathItems.ellipse(actualTop, actualLeft, actualDiameter, actualDiameter);
+  circle.fillColor = hexToRGBColor(color);
+  circle.strokeWidth = weight / 10;
+  if (strokeColor) circle.strokeColor = hexToRGBColor(strokeColor)
+
+  return circle;
+}
+
+function generateLine(x1, y1, x2, y2, color, weight) {
+  var line = generatedGroup.pathItems.add();
+  line.setEntirePath([
+    [mmToBoardX(x1), mmToBoardY(y1)],
+    [mmToBoardX(x2), mmToBoardY(y2)],
+  ]);
+  line.strokeColor = hexToRGBColor(color);
+  line.strokeWidth = weight / 10;
+
+  return line;
+}
+
 function generateLevel(left, top, levels, width, height) {
   generateRect(left, top, width, height, "#EEEEEE");
   for (var i = 0; i < levels.length - 1; i++) {
     var maxLevel = 5;
     var yUnit = height / maxLevel;
-    var startX = mmToBoardX(left + levels[i][0] * xUnit);
-    var startY = mmToBoardY(top + (maxLevel - levels[i][1]) * yUnit);
-    var endX = mmToBoardX(left + levels[i + 1][0] * xUnit);
-    var endY = mmToBoardY(top + (maxLevel - levels[i + 1][1]) * yUnit);
-    var line = generatedGroup.pathItems.add();
-    line.setEntirePath([
-      [startX, startY],
-      [endX, endY],
-    ]);
-    line.strokeColor = hexToRGBColor(fontColor.dark);
-    line.strokeWidth = 1 / 10;
+    var startX = left + levels[i][0] * xUnit;
+    var startY = top + (maxLevel - levels[i][1]) * yUnit;
+    var endX = left + levels[i + 1][0] * xUnit;
+    var endY = top + (maxLevel - levels[i + 1][1]) * yUnit;
+    generateLine(startX, startY, endX, endY, fontColor.dark, 1);
   }
 }
 
-function generateHumans(left, top, humanList, videoLength) {
+function generateHumans(left, centerY, humanList, videoLength) {
   for (var i = 0; i < humanList.length; i++) {
-    var startX = mmToBoardX(left + humanList[i][0] * xUnit);
-    var end = i === humanList.length - 1 ? videoLength : humanList[i + 1][0];
-    var endX = mmToBoardX(left + end * xUnit);
+    var endTime = i === humanList.length - 1 ? videoLength : humanList[i + 1][0];
+    var startX = left + humanList[i][0] * xUnit;
+    var endX = left + endTime * xUnit;
 
     var yUnit = 15;
     var height = humanList[i][1] === 0 ? 0 : (humanList[i][1] - 1) * yUnit;
-    var verticalLine = generatedGroup.pathItems.add();
-    var y = mmToBoardY(top + j * yUnit - height / 2);
 
     if (i !== 0) {
       var verticalLineHeight = (Math.max(humanList[i - 1][1], humanList[i][1]) - 1) * yUnit;
-      verticalLine.setEntirePath([
-        [startX, mmToBoardY(top - verticalLineHeight / 2)],
-        [startX, mmToBoardY(top + verticalLineHeight / 2)],
-      ]);
-      verticalLine.strokeColor = hexToRGBColor(fontColor.light);
-      verticalLine.strokeWidth = 1 / 10;
+      generateLine(startX, centerY - verticalLineHeight / 2, startX, centerY + verticalLineHeight / 2, fontColor.light, 1);
     }
 
     for (var j = 0; j < Math.max(1, humanList[i][1]); j++) {
-      var line = generatedGroup.pathItems.add();
-      var y = mmToBoardY(top + j * yUnit - height / 2);
-      line.setEntirePath([
-        [startX, y],
-        [endX, y],
-      ]);
-      line.strokeColor = hexToRGBColor(fontColor.light);
-      line.strokeWidth = 1 / 10;
+      var y = centerY - height / 2 + j * yUnit;
+      var line = generateLine(startX, y, endX, y, fontColor.light, 1);
       if (humanList[i][1] === 0) {
         line.strokeDashes = [1, 1];
         line.strokeColor = hexToRGBColor(fontColor.veryLight);
       } else {
-        var diameter = 2;
-        var circleTop = y + diameter / 2;
-        var circleLeft = startX - diameter / 2;
-        var circle = generatedGroup.pathItems.ellipse(circleTop, circleLeft, diameter, diameter);
-        circle.fillColor = hexToRGBColor("#BBBBBB");
-        circle.strokeWidth = 1 / 10;
+        generateCircle(startX, y, 3, "#BBBBBB", 1);
       }
     }
   }
 }
 
-function generateSounds(left, top, sounds) {
+function generateHumans2(left, centerY, humanList, videoLength) {
+  for (var i = 0; i < humanList.length; i++) {
+    var person = humanList[i];
+    for (var j = 0; j < person.length - 1; j++) {
+      var pointStart = person[j];
+      var pointEnd = person[j + 1];
+
+      var yUnit = 5;
+      var height = humanList.length === 0 ? 0 : (humanList.length - 1) * yUnit;
+
+      var startX = left + pointStart[0] * xUnit;
+      var endX = left + pointEnd[0] * xUnit;
+      var y = centerY - height / 2 + i * yUnit;
+
+      generateLine(startX, y, endX, y, fontColor.light, 1);
+    }
+  }
+}
+
+function generateHumans3(left, centerY, humanList, videoLength) {
+  var pointDiff = 2;
+  const points = Math.floor(videoLength) / pointDiff;
+  for (var i = 0; i <= points; i++) {
+    var time = i * pointDiff;
+    var startX = left + time * xUnit;
+
+    for (var j = 0; j < humanList.length; j++) {
+      var humanMoves = humanList[j];
+      for (var k = 0; k < humanMoves.length - 1; k++) {
+        if (humanMoves[k][0] <= time && time <= humanMoves[k + 1][0]) {
+          var ratio = (time - humanMoves[k][0]) / (humanMoves[k + 1][0] - humanMoves[k][0]);
+          var distance = (humanMoves[k][1] + (humanMoves[k + 1][1] - humanMoves[k][1]) * ratio) * 2;
+          var angle = humanMoves[k][2] + (humanMoves[k + 1][2] - humanMoves[k][2]) * ratio + 90;
+          var angleTheta = (angle / 360) * Math.PI * 2;
+
+          var endX = startX + Math.cos(angleTheta) * distance;
+          var endY = centerY - Math.sin(angleTheta) * distance;
+
+          generateLine(startX, centerY, endX, endY, fontColor.light, 1);
+          generateCircle(endX, endY, humanMoves[k][3] === undefined ? 1 :humanMoves[k][3], "#BBBBBB", 1);
+          break;
+        }
+      }
+    }
+
+    generateCircle(startX, centerY, 2, "#000000", 0);
+  }
+}
+
+function generateNoise(left, centerY, levels, videoLength) {
+  var pointDiff = 1;
+  const points = Math.floor(videoLength) / pointDiff;
+  for (var i = 0; i < points; i++) {
+    var time = i * pointDiff;
+    var baseX = left + time * xUnit;
+    for (var j = 0; j < levels.length - 1; j++) {
+      if (levels[j][0] <= time && time <= levels[j + 1][0]) {
+        var ratio = (time - levels[j][0]) / (levels[j + 1][0] - levels[j][0]);
+        var level = levels[j][1] + (levels[j + 1][1] - levels[j][1]) * ratio;
+        for (var k = 0; k < level * 10; k++) {
+          var distance = Math.random() * 10;
+          var angle = Math.random() * Math.PI * 2;
+          var x = baseX + Math.cos(angle) * distance;
+          var y = centerY - Math.sin(angle) * distance;
+
+          generateCircle(x, y, 0.1, "#555555", 1);
+        }
+        break;
+      }
+    }
+  }
+}
+
+function generateSounds(left, centerY, sounds) {
   for (var i = 0; i < sounds.length; i++) {
     var startX = left + sounds[i][0] * xUnit;
     var sizeUnit = 4;
     var diameter = sounds[i][1] * sizeUnit;
 
-    var circleTop = mmToBoardY(top - diameter / 2);
+    var circleTop = mmToBoardY(centerY - diameter / 2);
     var circleLeft = mmToBoardX(startX - diameter / 2);
     var circle = generatedGroup.pathItems.ellipse(circleTop, circleLeft, mmToPt(diameter), mmToPt(diameter));
     circle.fillColor = hexToRGBColor("#BBBB00");
@@ -440,24 +729,24 @@ function generateEvents(left, top, events) {
   var topMargin = 10;
   for (var i = 0; i < events.length; i++) {
     var startX = left + events[i][0] * xUnit;
-    var textObject = generateTextLeftTop(events[i][1], 0, 0, fontSize.small, fontColor.veryLight);
+    var textObject = generateTextLeftTop(events[i][1], 0, 0, fontSize.small, fontColor.light);
     textObject.rotate(-30);
     moveTextLeftTop(textObject, startX, top + topMargin);
   }
 }
 
-function generateTimes(left, y, videoLength) {
+function generateTimes(left, centerY, videoLength) {
   for (var i = 0; i < videoLength / frameSec; i++) {
     var sec = i * frameSec;
     var startX = left + sec * xUnit;
-    generateTextCenterCenter(Math.floor(sec / 60) + ":" + pad(sec % 60), startX, y, fontSize.small, fontColor.light);
+    generateTextCenterCenter(Math.floor(sec / 60) + ":" + pad(sec % 60), startX, centerY, fontSize.small, fontColor.light);
   }
 }
 
-function generatePlaces(left, y, places, videoLength) {
+function generatePlaces(left, centerY, places, videoLength) {
   for (var i = 0; i < places.length; i++) {
     var startX = left + places[i][0] * xUnit;
-    generateTextCenterCenter(places[i][1], startX, y, fontSize.small, fontColor.light);
+    generateTextCenterCenter(places[i][1], startX, centerY, fontSize.small, fontColor.light);
   }
 }
 
@@ -467,7 +756,6 @@ var generatedGroup = createGroupWithName("generated");
 const margin = 30;
 const commonMargin = 5;
 const baseLeft = 150;
-// const startY = 120;
 const startY = 50;
 
 const framesHeight = 80;
@@ -476,6 +764,7 @@ const xUnit = ((framesHeight / 4032) * 2268) / frameSec;
 
 const height = {
   title: 30,
+  startTime: 10,
   place: 10,
   time: 10,
   level: 80,
@@ -486,10 +775,14 @@ const height = {
   colorDominant: 20,
   colorCluster5: 60,
   colorCluster10: 60,
-  visualHumans: 50,
+  visualHumans: 70,
+  visualHumans2: 50,
+  visualHumans3: 50,
   consciousHumans: 80,
+  consciousHumans2: 80,
   sound: 40,
   noise: 60,
+  sound2: 40,
   event: 100,
 };
 const bottomMargin = 50;
@@ -498,17 +791,17 @@ var blockHeight = bottomMargin;
 for (var key in height) {
   blockHeight += height[key] + commonMargin;
 }
-var artboardName = "timeline-1"
+var artboardName = "timeline-1";
 
 // generateTextLeftTop("知覚したもの", margin, margin, fontSize.title, fontColor.dark);
 for (var i = 0; i < patterns.length; i++) {
   var pattern = patterns[i];
   var nameIndex = i + 1;
-  artboardName = "timeline-" + nameIndex
-  
-  // var baseY = startY + blockHeight * i;
-  var baseY = startY;
-  var placeY = baseY + height.title + commonMargin;
+  artboardName = "timeline-" + nameIndex;
+
+  var startTimeY = startY;
+  var titleY = startTimeY + height.startTime + commonMargin;
+  var placeY = titleY + height.title + commonMargin;
   var timeY = placeY + height.place + commonMargin;
   var levelY = timeY + height.time + commonMargin;
   var framesY = levelY + height.level + commonMargin;
@@ -519,10 +812,14 @@ for (var i = 0; i < patterns.length; i++) {
   var colorCluster5Y = colorDominantY + height.colorDominant + commonMargin;
   var colorCluster10Y = colorCluster5Y + height.colorCluster5 + commonMargin;
   var visualHumansY = colorCluster10Y + height.colorCluster10 + commonMargin;
-  var consciousHumansY = visualHumansY + height.visualHumans + commonMargin;
-  var soundY = consciousHumansY + height.consciousHumans + commonMargin;
+  var visualHumans2Y = visualHumansY + height.visualHumans + commonMargin;
+  var visualHumans3Y = visualHumans2Y + height.visualHumans2 + commonMargin;
+  var consciousHumansY = visualHumans3Y + height.visualHumans3 + commonMargin;
+  var consciousHumans2Y = consciousHumansY + height.consciousHumans + commonMargin;
+  var soundY = consciousHumans2Y + height.consciousHumans2 + commonMargin;
   var noiseY = soundY + height.sound + commonMargin;
-  var eventY = noiseY + height.noise + commonMargin;
+  var sound2Y = noiseY + height.noise + commonMargin;
+  var eventY = sound2Y + height.sound2 + commonMargin;
 
   var framesImage = moveImage("frames-" + nameIndex, baseLeft, framesY);
   moveImage("sketch-" + nameIndex, baseLeft, sketchY);
@@ -535,13 +832,19 @@ for (var i = 0; i < patterns.length; i++) {
   generateTimes(baseLeft, timeY + height.time / 2, pattern.videoLength);
   generateLevel(baseLeft, levelY, pattern.levels, ptToMm(framesImage.width), height.level);
   generateHumans(baseLeft, visualHumansY + height.visualHumans / 2, pattern.visualHumans, pattern.videoLength);
+  generateHumans2(baseLeft, visualHumans2Y + height.visualHumans2 / 2, pattern.visualHumans2, pattern.videoLength);
+  generateHumans3(baseLeft, visualHumans3Y + height.visualHumans3 / 2, pattern.visualHumans2, pattern.videoLength);
   generateHumans(baseLeft, consciousHumansY + height.consciousHumans / 2, pattern.consciousHumans, pattern.videoLength);
-  generateLevel(baseLeft, noiseY, pattern.noise, ptToMm(framesImage.width), height.noise);
+  generateHumans3(baseLeft, consciousHumans2Y + height.consciousHumans2 / 2, pattern.consciousHumans2, pattern.videoLength);
   generateSounds(baseLeft, soundY + height.sound / 2, pattern.sounds);
+  generateLevel(baseLeft, noiseY, pattern.noise, ptToMm(framesImage.width), height.noise);
+  // generateNoise(baseLeft, sound2Y + height.sound2 / 2, pattern.noise, pattern.videoLength);
+  generateSounds(baseLeft, sound2Y + height.sound2 / 2, pattern.sounds);
   generateEvents(baseLeft, eventY, pattern.events);
 
   var labelRight = baseLeft - commonMargin * 2;
-  generateTextLeftTop(pattern.name, baseLeft, baseY, fontSize.large, fontColor.dark);
+  generateTextLeftTop(pattern.name, baseLeft, titleY, fontSize.large, fontColor.dark);
+  generateTextLeftTop(pattern.startTime, baseLeft, startTimeY, fontSize.small, fontColor.light);
   generateTextRightCenter("ひと気の強さ", labelRight, levelY + height.level / 2, fontSize.medium, fontColor.light);
   generateTextRightCenter("frames", labelRight, framesY + height.frames / 2, fontSize.medium, fontColor.light);
   generateTextRightCenter("lines", labelRight, sketchY + height.sketch / 2, fontSize.medium, fontColor.light);
@@ -554,5 +857,6 @@ for (var i = 0; i < patterns.length; i++) {
   generateTextRightCenter("意識の中の人数", labelRight, consciousHumansY + height.consciousHumans / 2, fontSize.medium, fontColor.light);
   generateTextRightCenter("人が発する音", labelRight, soundY + height.sound / 2, fontSize.medium, fontColor.light);
   generateTextRightCenter("ノイズの大きさ", labelRight, noiseY + height.noise / 2, fontSize.medium, fontColor.light);
-  generateTextRightCenter("発生した事象", labelRight, eventY + 30, fontSize.medium, fontColor.light);
+  generateTextRightCenter("人の音+ノイズ", labelRight, sound2Y + height.sound2 / 2, fontSize.medium, fontColor.light);
+  generateTextRightCenter("発生した事象", labelRight, eventY + 20, fontSize.medium, fontColor.light);
 }
